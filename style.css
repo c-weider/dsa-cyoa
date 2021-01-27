@@ -72,3 +72,6 @@ body {
     border: none;
     text-decoration: underline;
 }
+.btn:focus {
+    outline: none;
+}
