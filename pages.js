@@ -141,7 +141,7 @@ window.path = {
         'success': 'huette2'
     },
     "huette_marco": {
-        'text': '"Mo!" ist das erste, was du hörst. "Mo!" erwiderst du. "Mo!" - "Mo! Es reicht. Schön dich zu sehen." "Bashar, ich freue mich auch dich zu sehen. Hier spielt alles verrückt. Draußen sind überall diese Pilze und irgendwie können die in deinen Körper gelangen. Selbst meine exzellenten Medizinkenntnisse können da nicht mehr helfen. Ich glaube die einzige Möglichkeit dies zu überleben, ist sich hier zu verstecken und zu hoffen, dass dieser Albtraum bald zu Ende ist."<br>"Oh, Balduin ist noch draußen. Wir sollten ihn hinein lassen."',
+        'text': '"Mo!" ist das erste, was du hörst. "Mo!" erwiderst du. "Mo!" - "Mo! Es reicht. Schön dich zu sehen." "Bashar, ich freue mich auch dich zu sehen. Hier spielt alles verrückt. Draußen sind überall diese Pilze und irgendwie können die in deinen Körper gelangen. Selbst meine exzellenten Medizinkenntnisse können da nicht mehr helfen. Ich glaube die einzige Möglichkeit dies zu überleben, ist sich hier zu verstecken und zu hoffen, dass dieser Albtraum bald zu Ende ist."<br>Während der Unterhaltung lässt du auch Balduin in die Hütte.',
         'success': 'huette2'
     },
     "huette2": {

@@ -20,8 +20,8 @@ window.stats = {
     'GE': 14,
     'KO': 12,
     'KK': 11,
-    'AT': 13,
-    'PA': 14
+    'AT': 12,
+    'PA': 13
 };
 
 window.skills = {
