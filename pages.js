@@ -1,31 +1,31 @@
 window.path = {
     'start': {
         'text': 'Hallo Löwe,<br>da es gerade nicht möglich ist, gemeinsam am Tisch zu sitzen, haben wir ein kleines Online-Abenteuer für dich vorbereitet.<br>Hol Dir als Vorbereitung einen W20, im Laufe des Spiels musst du Würfelergebnisse eintragen.<br><br>Viel Spaß!',
-        'success': '1',
+        'success': 'ort',
     },
-    '1': {
+    'ort': {
         'text': '<span class="title">Bashar - Der Letzte von uns</span><br><br><br>Du wachst mitten auf dem Dorfplatz von einem kleinen, unbekannten Ort auf. Die meisten Häuser sind verbarrikadiert, nur die <button class="intext-btn link-a-btn">Taverne</button> sieht halbwegs einladend aus.<br><br>Auf der anderen Seite des Dorfes siehst du einen kleinen Weg, dieser scheint in den nahegelegenen <button class="intext-btn link-b-btn">Wald</button> zu führen.',
         'distraction': true,
         'link_b': 'wald',
-        'link_a': '1distraction',
+        'link_a': 'kneipe',
     },
-    '1distraction': {
+    'kneipe': {
         'text': 'Du begibst dich in die Taverne. Sie ist nicht gut beleuchtet und noch schlechter besucht. Aber ein stämmiger Wirt steht hinter dem Tresen und putzt einen Krug.<br>"Hallo Fremder, was kann ich gutes für dich tun?"<br>"Rastullah zum Gruße, ich suche meine Gefährten. Hat eine Gruppe von Fremde vor Kurzem dieses wunderbare Etablissement besucht?"<br>"Hmm, ja schon, aber..." <br>Er beäugt dich eindringlich.',
-        'success': '1distraction_2',
+        'success': 'kneipe2',
     },
-    '1distraction_2': {
+    'kneipe2': {
         'text': '"Aber die Fremden waren ein Adliger aus dem Bornland und sein Gefolge. Ich glaube nicht, dass dies die Freunde waren, die du suchst ..." fährt er fort, "... Ohne Dir zu nahe zu treten. Aber weißt du was: Sie haben ein gutes Trinkgeld gegeben, hier ... ein Met aufs Haus."<br>Du bedankst dich für den Met und trinkst ihn hastig aus. Danach begibst du dich wieder nach draußen. Das Sonnenlicht blendet dich zuerst, aber du gewöhnst dich schnell dran.',
-        'success': '1copy',
+        'success': 'ort_copy',
     },
-    '1copy': {
+    'ort_copy': {
         'text': 'Du befindest dich wieder auf dem Dorfplatz.<br>Dein einziger Ausweg scheint der <button class="intext-btn link-a-btn">Wald</button> zu sein.<br>Oder solltest du doch nochmal in der <button class="intext-btn link-b-btn">Taverne</button> nachschauen?',
         'distraction': true,
         'link_a': 'wald',
-        'link_b': '1distractioncopy',
+        'link_b': 'kneipe_retry',
     },
-    '1distractioncopy': {
+    'kneipe_retry': {
         'text': '"Ah, mein südländischer Freund. Hast du was vergessen? Den nächsten Met musst du leider zahlen."<br>Du würdest gerne noch einen trinken, aber scheinbar ist dein Geldbeutel weg. Traurig verlässt du die Kneipe.',
-        'success': '1copy',
+        'success': 'ort_copy',
     },
     "wald": {
         'text': 'Du begibst dich in den Wald. Zuerst befindest du dich noch auf einem gut befestigten Weg, aber je tiefer du in den Wald kommst, desto schlechter lässt sich der Pfad erkennen.<br><br>Mach eine Probe auf Wildnisleben.',
@@ -44,7 +44,7 @@ window.path = {
     "zwerg": {
         'text': 'Es ist tatsächlich Belegol. Er steht mit dem Rücken zu dir und ist voll auf seine Aufgabe konzentriert - er angelt! "Belegol, was machst du da? Fische wird es hier keine geben. Oder versuchst du wieder ein Eichhörnchen zu fangen?" - Du lachst laut los, er reagiert nicht. Möchtest du ihn gewaltsam zu dir <button class="intext-btn link-a-btn">herum drehen</button> oder findest du dies alles sehr merkwürdig und <button class="intext-btn link-b-btn">gehst weiter</button>, ohne ihn zu beachten?',
         'distraction': true,
-        'link_a': 'zwerg_fail',
+        'link_a': 'zwerg_touch',
         'link_b': 'zwerg_confirm'
     },
     "zwerg_confirm": {
@@ -56,10 +56,10 @@ window.path = {
     "zwerg2": {
         'text': 'Du bist wieder zurück beim Zwerg. Gehst du <button class="intext-btn link-a-btn">auf ihn zu</button> oder bist du dir jetzt doch sicher <button class="intext-btn link-b-btn">alleine weiter</button> zu gehen?',
         'distraction': true,
-        'link_a': 'zwerg_fail',
+        'link_a': 'zwerg_touch',
         'link_b': 'zwerg_confirm'
     },
-    "zwerg_fail": {
+    "zwerg_touch": {
         'text': 'Gerade als du Belegol berühren willst, dreht er sich von alleine um. In dem Moment merkst du, dass er gar nicht angelt. Die Angelleine ist ein Auswuchs aus einem Pilz am Wegesrand, der sich scheinbar am Kopf des Zwergen festgesetzt hat. Und auch Belegol scheint nicht er selbst zu sein, seine Augen sind komplett weiß und er greift nach seiner Axt.<br>Du kannst dem ersten Schlag durch eine Ausweichrolle entgehen und zückst nun selbst dein Streithammer.',
         'success': 'wald_kampf'
     },
@@ -81,12 +81,6 @@ window.path = {
     "wald_kampf_win": {
         'text': 'Kampf gegen Ophiocordyceps<br><br>Du triffst den Pilz genau an der Stelle, wo die "Angelleine" am dünnsten ist. Unter einem unnatürlichen Schreien verschrumpelt der Pilz.<br>Aber auch dein Freund wird kleiner und kleiner. War dies alles nur eine Illusion?<br>In diesem Moment merkst du die Sporen in der Luft. Ohne lange Nachzudenken rennst du weiter in den Wald hinein.',
         'success': 'tiefer_wald'
-    },
-    "wald_kampf2": {
-        'text': 'Kampf gegen Ophiocordyceps<br><br>Du holst zum Schlag aus.',
-        'success': 'wald_kampf2',
-        'check': 'AT',
-        'fail': 'wald_kampf_fail'
     },
     "tiefer_wald_ohne": {
         'text': 'Der Wald wird immer dunkler. Aber du willst auch nicht umdrehen, irgendetwas an Belegol hat einfach nicht gestimmt.<br><br>Irgendwann scheint es aber wieder heller zu werden oder bildest du das dir nur ein?<br>Nein, dort scheint eine Lichtung zu sein. Und mitten auf der Lichtung kannst du eine kleine Hütte erkennen. Du kannst keinen Eingang erkennen, aber vor der Hütte steht Alrik und murmelt etwas vor sich hin.',
