@@ -52,13 +52,13 @@ $(document).ready(function(){
     $('.link-a-btn').on('click', function(){
 
         localStorage.dsa_currentPage = obj.link_a;
-        window.location = "index.html";
+        window.location = "/";
     });
 
     $('.link-b-btn').on('click', function(){
 
         localStorage.dsa_currentPage = obj.link_b;
-        window.location = "index.html";
+        window.location = "/";
     });
 
     $('.submit-btn').on('click', function(){
@@ -114,12 +114,12 @@ $(document).ready(function(){
             }
         }
 
-        window.location = "index.html";
+        window.location = "/";
     });
 
     $('.reset-btn').on('click', function(){
         localStorage.dsa_currentPage = 'start';
-        window.location = "index.html";
+        window.location = "/";
     });
 });
 
