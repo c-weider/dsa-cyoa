@@ -33,7 +33,7 @@ $(document).ready(function(){
         $('.checks').html('');
         var skill = window.skills[obj.checkSkill];
         skill.checks.forEach(function(stat, i){
-            var element = '<div class="stat"><div class="check-text">'+window.names[stat]+' ('+window.stats[stat]+'):</div><input min=1 max=20 type="number" id="skill_'+i+'"></div>';
+            var element = '<div class="stat"><div class="check-text">'+window.names[stat]+' ('+window.stats[stat]+'):</div><input min=1 max=20 required type="number" id="skill_'+i+'"></div>';
             $('.checks').append(element);
         });
         $('.checks').show();
@@ -43,13 +43,13 @@ $(document).ready(function(){
     {
         var stat = obj.check;
         $('.checks').html('');
-        var element = '<div class="stat"><div class="check-text">'+window.names[stat]+' ('+window.stats[stat]+'):</div><input min=1 max=20 type="number" id="stat"></div>';
+        var element = '<div class="stat"><div class="check-text">'+window.names[stat]+' ('+window.stats[stat]+'):</div><input min=1 max=20 required type="number" id="stat"></div>';
         $('.checks').append(element);
 
         $('.checks').show();
     }
 
-        $('.link-a-btn').on('click', function(){
+    $('.link-a-btn').on('click', function(){
 
         localStorage.dsa_currentPage = obj.link_a;
         window.location = "index.html";
@@ -75,6 +75,10 @@ $(document).ready(function(){
             skill.checks.forEach(function(c, i){
                 var stat = window.stats[c];
                 var rolled = parseInt($('input#skill_'+i).val());
+                if(isNaN(rolled))
+                {
+                    rolled = 20;
+                }
 
                 if(rolled == 1)
                 {
@@ -100,6 +104,10 @@ $(document).ready(function(){
         {
             var stat = window.stats[obj.check];
             var rolled = parseInt($('input#stat').val());
+            if(isNaN(rolled))
+            {
+                rolled = 20;
+            }
             if(rolled > stat)
             {
                 localStorage.dsa_currentPage = obj.fail;

@@ -1,0 +1,70 @@
+body {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 30px;
+    text-align: center;
+    color: #444;
+}
+.container {
+    background-image: url("pergament.png");
+    background-size: 100% 100%;
+    position: absolute;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 40px;
+    max-width: 1000px;
+    padding: 50px 0;
+}
+.text, .checks {
+    /*position: absolute;*/
+    /*left: 50px;*/
+}
+.text {
+    margin-bottom: 20px;
+    padding: 0 50px;
+    /*width: 550px;*/
+    /*top: 50px;*/
+}
+.checks {
+    /*width: 500px;*/
+    /*bottom: 100px;*/
+    margin-bottom: 20px;
+}
+.checks .check-text {
+    text-align: right;
+    width: 50%;
+    float: left;
+}
+.checks input {
+    margin-left: -240px;
+    height: 30px;
+    background: none;
+    border: 3px solid #444;
+    border-radius: 10px;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 30px;
+    color: #444;
+    text-align: center;
+}
+.intext-btn {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 30px;
+    text-align: center;
+    color: #444;
+    background: none;
+    border: none;
+    text-decoration: underline;
+    padding: 0;
+}
+.btn {
+    /*position: absolute;*/
+    /*bottom: 50px;*/
+    /*left: 160px;*/
+    width: 100%;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 30px;
+    text-align: center;
+    color: #444;
+    background: none;
+    border: none;
+    text-decoration: underline;
+}

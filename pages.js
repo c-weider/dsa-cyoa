@@ -28,7 +28,7 @@ window.path = {
         'success': '1copy',
     },
     "wald": {
-        'text': 'Du begibst dich in den Wald. Zuerst befindest du dich noch auf einem gut befestigten Weg, aber je tiefer du in den Wald kommst, desto schlechter lässt sich der Pfad erkennen.<br><br><br>Mach eine Probe auf Wildnisleben.',
+        'text': 'Du begibst dich in den Wald. Zuerst befindest du dich noch auf einem gut befestigten Weg, aber je tiefer du in den Wald kommst, desto schlechter lässt sich der Pfad erkennen.<br><br>Mach eine Probe auf Wildnisleben.',
         'success': 'wald_success',
         'checkSkill': 'Wildnis',
         'fail': 'wald_fail'
@@ -64,19 +64,19 @@ window.path = {
         'success': 'wald_kampf'
     },
     "wald_kampf": {
-        'text': 'Kampf gegen Ophiocordyceps<br><br><br><br><br><br><br><br>Du holst zum Schlag aus.',
+        'text': 'Kampf gegen Ophiocordyceps<br><br>Du holst zum Schlag aus.',
         'success': 'wald_kampf_win',
         'check': 'AT',
         'fail': 'wald_kampf_fail'
     },
     "wald_kampf_fail": {
-        'text': 'Kampf gegen Ophiocordyceps<br><br><br><br><br><br><br><br>Du verfehlst sowohl den Pilz als auch deinen Freund.<br>Der Pilz schlägt mit einem weiteren Auswuchs nach dir.<br>Du versuchst du parieren.',
+        'text': 'Kampf gegen Ophiocordyceps<br><br>Du verfehlst sowohl den Pilz als auch deinen Freund.<br>Der Pilz schlägt mit einem weiteren Auswuchs nach dir.<br>Du versuchst du parieren.',
         'success': 'wald_kampf',
         'check': 'PA',
         'fail': 'wald_kampf_end'
     },
     "wald_kampf_end": {
-        'text': 'Kampf gegen Ophiocordyceps<br><br><br><br><br><br>Der Pilz trifft dich.<br>Du schreist laut auf, aber innerhalb von Sekunden klingen deine eigenen Schreie nur entfernt in deinen Ohren wieder. Es wird schwarz vor deinen Augen.<br><br>Dein Abenteuer endet hier. Möchtest du es nochmal versuchen?'
+        'text': 'Kampf gegen Ophiocordyceps<br><br>Der Pilz trifft dich.<br>Du schreist laut auf, aber innerhalb von Sekunden klingen deine eigenen Schreie nur entfernt in deinen Ohren wieder. Es wird schwarz vor deinen Augen.<br><br>Dein Abenteuer endet hier. Möchtest du es nochmal versuchen?'
     },
     "wald_kampf_win": {
         'text': 'Kampf gegen Ophiocordyceps<br><br>Du triffst den Pilz genau an der Stelle, wo die "Angelleine" am dünnsten ist. Unter einem unnatürlichen Schreien verschrumpelt der Pilz.<br>Aber auch dein Freund wird kleiner und kleiner. War dies alles nur eine Illusion?<br>In diesem Moment merkst du die Sporen in der Luft. Ohne lange Nachzudenken rennst du weiter in den Wald hinein.',
@@ -93,19 +93,19 @@ window.path = {
         'success': 'vor_huette_kampf',
     },
     "vor_huette_kampf": {
-        'text': 'Kampf gegen Alrik?<br><br><br><br><br><br>Alrik sagt kein Wort zu dir, aber macht sich bereit mit seinem Kampfstab auf dich einzudreschen. Du bist jedoch schneller und holst zum Schlag aus.',
+        'text': 'Kampf gegen Alrik?<br><br>Alrik sagt kein Wort zu dir, aber macht sich bereit mit seinem Kampfstab auf dich einzudreschen. Du bist jedoch schneller und holst zum Schlag aus.',
         'success': 'vor_huette_kampf_win',
         'check': 'AT',
         'fail': 'vor_huette_kampf_fail'
     },
     "vor_huette_kampf_fail": {
-        'text': 'Kampf gegen Alrik?<br><br><br><br><br><br>Du schlägst ins Leere. Alrik nutzt diesen Fehler aus und trifft dich mit seinem Stab. Jedoch mit so wenig Kraft, dass du es gar nicht richtig spürst. Du bist bereit für einen weiteren Angriff.',
+        'text': 'Kampf gegen Alrik?<br><br>Du schlägst ins Leere. Alrik nutzt diesen Fehler aus und trifft dich mit seinem Stab. Jedoch mit so wenig Kraft, dass du es gar nicht richtig spürst. Du bist bereit für einen weiteren Angriff.',
         'success': 'vor_huette_kampf_win',
         'check': 'AT',
         'fail': 'vor_huette_kampf_fail2'
     },
     "vor_huette_kampf_fail2": {
-        'text': 'Kampf gegen Alrik?<br><br><br><br><br><br>Und erneut geht der Schlag daneben. Alrik trifft dich, aber macht keinen Schaden. Du bist bereit für einen weiteren Angriff.',
+        'text': 'Kampf gegen Alrik?<br><br>Und erneut geht der Schlag daneben. Alrik trifft dich, aber macht keinen Schaden. Du bist bereit für einen weiteren Angriff.',
         'success': 'vor_huette_kampf_win',
         'check': 'AT',
         'fail': 'vor_huette_kampf_fail'
@@ -157,7 +157,7 @@ window.path = {
         'fail': 'huette2_fail'
     },
     "huette2_fail": {
-        'text': '"Komm lass mich das machen." ruft Mo dir zu, als sie merkt, wie sehr dich das Öffnen anstrengt. Du gibst Mo die Schachtel und sie öffnet sie problemlos für dich.',
+        'text': '"Komm lass mich das machen." ruft Mo dir zu, als sie merkt, wie sehr dich das Öffnen anstrengt. Du gibst Mo die Schachtel und sie öffnet diese problemlos für dich.',
         'success': 'huette2_finale'
     },
     "huette2_win": {
@@ -169,7 +169,7 @@ window.path = {
         'success': 'grats'
     },
     "grats": {
-        "text": 'Hier endet dein Abenteuer.<br><br>Wir hoffen es hat dir Spaß gemacht.<br><br>Auch in der Realität solltest du nun eine kleine Schachtel finden. Wir wünschen dir spaßige und gruselige Stunden damit.<br><br><br><br>Natürlich kannst du gerne dieses Abenteuer nochmal spielen, falls du auch die anderen Wege erkunden möchtest.',
+        "text": 'Hier endet dein Abenteuer.<br><br>Wir hoffen es hat dir Spaß gemacht.<br><br>Auch in der Realität solltest du nun eine kleine Schachtel finden. Wir wünschen dir spaßige und gruselige Stunden damit.<br><br>Natürlich kannst du gerne dieses Abenteuer nochmal spielen, falls du auch die anderen Wege erkunden möchtest.',
     },
     "fail": {
         'text': 'Steine stürzen. Du bist tot.<br><br>Diese Seite hättest du nicht sehen sollen.<br><br>Woscht gibt dir aber gerne ein Bier aus, da du so fleißig nach Bugs gesucht hast.',
