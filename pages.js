@@ -18,7 +18,7 @@ window.path = {
         'success': 'ort_copy',
     },
     'ort_copy': {
-        'text': 'Du befindest dich wieder auf dem Dorfplatz.<br>Dein einziger Ausweg scheint der <button class="intext-btn link-a-btn">Wald</button> zu sein.<br>Oder solltest du doch nochmal in der <button class="intext-btn link-b-btn">Taverne</button> nachschauen?',
+        'text': 'Du befindest dich wieder auf dem Dorfplatz.<br><br>Dein einziger Ausweg scheint der <button class="intext-btn link-a-btn">Wald</button> zu sein.<br><br>Oder solltest du doch nochmal in der <button class="intext-btn link-b-btn">Taverne</button> nachschauen?',
         'distraction': true,
         'link_a': 'wald',
         'link_b': 'kneipe_retry',
@@ -38,11 +38,11 @@ window.path = {
         'success': 'zwerg'
     },
     "wald_fail": {
-        'text': '"Ah, da ist ja der Weg" sagst du zu dir selbst.<br>Du begibst dich weiter und weiter in den Wald, in der absoluten Sicherheit auf dem richtigen Weg zu sein.<br>Irgendwann musst du dir aber selbst eingestehen, dass du dich verlaufen hast und planlos durchs Unterholz schlägst. Die Schnitte und Abschürfungen an deinem Körper treiben dich fast zur Kapitulation.<br>Aber genau in dem Moment hörst du ein dir bekanntes Geräusch - das Lied eines Zwergen.',
+        'text': '"Ah, da ist ja der Weg" sagst du zu dir selbst.<br>Du begibst dich weiter und weiter in den Wald, in der absoluten Sicherheit auf dem richtigen Weg zu sein.<br>Irgendwann musst du dir aber selbst eingestehen, dass du dich verlaufen hast und planlos durchs Unterholz schlägst. Die Schnitte und Abschürfungen an deinem Körper treiben dich fast zur Kapitulation.<br>Aber genau in dem Moment riechst du einen dir bekannten Geruch - ein Zwergen.',
         'success': 'zwerg'
     },
     "zwerg": {
-        'text': 'Es ist tatsächlich Belegol. Er steht mit dem Rücken zu dir und ist voll auf seine Aufgabe konzentriert - er angelt! "Belegol, was machst du da? Fische wird es hier keine geben. Oder versuchst du wieder ein Eichhörnchen zu fangen?" - Du lachst laut los, er reagiert nicht. Möchtest du ihn gewaltsam zu dir <button class="intext-btn link-a-btn">herum drehen</button> oder findest du dies alles sehr merkwürdig und <button class="intext-btn link-b-btn">gehst weiter</button>, ohne ihn zu beachten?',
+        'text': 'Es ist tatsächlich Belegol. Er steht mit dem Rücken zu dir und ist voll auf seine Aufgabe konzentriert - er angelt!<br>"Belegol, was machst du da? Fische wird es hier keine geben. Oder versuchst du wieder ein Eichhörnchen zu fangen?" - Du lachst laut los, er reagiert nicht. Möchtest du ihn gewaltsam zu dir <button class="intext-btn link-a-btn">herum drehen</button> oder findest du dies alles sehr merkwürdig und <button class="intext-btn link-b-btn">gehst weiter</button>, ohne ihn zu beachten?',
         'distraction': true,
         'link_a': 'zwerg_touch',
         'link_b': 'zwerg_confirm'
@@ -105,7 +105,7 @@ window.path = {
         'fail': 'vor_huette_kampf_fail'
     },
     "vor_huette_kampf_win": {
-        'text': 'Du triffst.<br>Aber du erschrickst, als plötzlich doch ein Geräusch von Alrik kommt - ein unmenschliches Schreien. Dabei schrumpft er zusammen und wird immer kleiner. War dies eine von seinen bekannten Illusionen? Nein, als Alrik verschwunden ist, kannst du die Überreste von einem Ophiocordyceps erkennnen - einem Pilz, der andere Wesen kontrollieren kann.<br>Du atmest kurz durch und merkst dann, dass sich auf der Rückseite der Hütte doch eine Tür befindet - du trittst ein.',
+        'text': 'Du triffst.<br>Aber im gleichen Moment erschrickst du , denn plötzlich kommt ein Geräusch von Alrik - ein unmenschliches Schreien. Dabei schrumpft er zusammen und wird immer kleiner. War dies eine von seinen bekannten Illusionen? Nein, als Alrik verschwunden ist, kannst du die Überreste von einem Ophiocordyceps erkennnen - einem Pilz, der andere Wesen kontrollieren kann.<br>Du atmest kurz durch und merkst dann, dass sich auf der Rückseite der Hütte doch eine Tür befindet - du trittst ein.',
         'success': 'huette',
     },
     "tiefer_wald": {
@@ -137,11 +137,11 @@ window.path = {
         'success': 'huette_marco'
     },
     "huette": {
-        'text': '"Mo!" ist das erste, was du hörst. "Mo!" erwiderst du. "Mo!" - "Mo! Es reicht. Schön dich zu sehen." "Bashar, ich freue mich auch dich zu sehen. Hier spielt alles verrückt. Draußen sind überall diese Pilze und irgendwie können die in deinen Körper gelangen. Selbst meine exzellenten Medizinkenntnisse können da nicht mehr helfen. Ich glaube die einzige Möglichkeit dies zu überleben, ist sich hier zu verstecken und zu hoffen, dass dieser Albtraum bald herum ist."',
+        'text': '"Mo!" ist das erste, was du hörst. "Mo!" erwiderst du. "Mo!" - "Mo! Es reicht. Schön dich zu sehen." "Bashar, ich freue mich auch dich zu sehen. Hier spielt alles verrückt. Draußen sind überall diese Pilze und irgendwie können die in deinen Körper gelangen. Selbst meine exzellenten Medizinkenntnisse können da nicht mehr helfen. Ich glaube die einzige Möglichkeit dies zu überleben, ist sich hier zu verstecken und zu hoffen, dass dieser Albtraum bald zu Ende ist."',
         'success': 'huette2'
     },
     "huette_marco": {
-        'text': '"Mo!" ist das erste, was du hörst. "Mo!" erwiderst du. "Mo!" - "Mo! Es reicht. Schön dich zu sehen." "Bashar, ich freue mich auch dich zu sehen. Hier spielt alles verrückt. Draußen sind überall diese Pilze und irgendwie können die in deinen Körper gelangen. Selbst meine exzellenten Medizinkenntnisse können da nicht mehr helfen. Ich glaube die einzige Möglichkeit dies zu überleben, ist sich hier zu verstecken und zu hoffen, dass dieser Albtraum bald herum ist."<br>"Oh, Balduin ist noch draußen. Wir sollten ihn hinein lassen.',
+        'text': '"Mo!" ist das erste, was du hörst. "Mo!" erwiderst du. "Mo!" - "Mo! Es reicht. Schön dich zu sehen." "Bashar, ich freue mich auch dich zu sehen. Hier spielt alles verrückt. Draußen sind überall diese Pilze und irgendwie können die in deinen Körper gelangen. Selbst meine exzellenten Medizinkenntnisse können da nicht mehr helfen. Ich glaube die einzige Möglichkeit dies zu überleben, ist sich hier zu verstecken und zu hoffen, dass dieser Albtraum bald zu Ende ist."<br>"Oh, Balduin ist noch draußen. Wir sollten ihn hinein lassen."',
         'success': 'huette2'
     },
     "huette2": {
