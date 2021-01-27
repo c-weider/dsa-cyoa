@@ -12,19 +12,19 @@ window.names = {
 };
 
 window.stats = {
-    'MU': 12,
-    'KL': 12,
-    'IN': 12,
-    'CH': 12,
-    'FF': 12,
-    'GE': 12,
+    'MU': 0,
+    'KL': 0,
+    'IN': 13,
+    'CH': 0,
+    'FF': 0,
+    'GE': 14,
     'KO': 12,
-    'KK': 12,
-    'AT': 15,
+    'KK': 11,
+    'AT': 13,
     'PA': 14
 };
 
 window.skills = {
-    'Athletik':  {checks:['GE','KO','KK'], value: 6},
-    'Wildnis':  {checks:['IN','GE','KO'], value: 6},
+    'Athletik':  {checks:['GE','KO','KK'], value: 4},
+    'Wildnis':  {checks:['IN','GE','KO'], value: 2},
 };

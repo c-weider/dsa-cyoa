@@ -4,7 +4,7 @@ window.path = {
         'success': '1',
     },
     '1': {
-        'text': '##Bashar - Der Letzte von uns<br><br><br>Du wachst mitten auf dem Dorfplatz von einem kleinen, unbekannten Ort auf. Die meisten Häuser sind verbarrikadiert, nur die <button class="intext-btn link-a-btn">Taverne</button> sieht halbwegs einladend aus.<br><br>Auf der anderen Seite des Dorfes siehst du einen kleinen Weg, dieser scheint in den nahegelegenen <button class="intext-btn link-b-btn">Wald</button> zu führen.',
+        'text': '<span class="title">Bashar - Der Letzte von uns</span><br><br><br>Du wachst mitten auf dem Dorfplatz von einem kleinen, unbekannten Ort auf. Die meisten Häuser sind verbarrikadiert, nur die <button class="intext-btn link-a-btn">Taverne</button> sieht halbwegs einladend aus.<br><br>Auf der anderen Seite des Dorfes siehst du einen kleinen Weg, dieser scheint in den nahegelegenen <button class="intext-btn link-b-btn">Wald</button> zu führen.',
         'distraction': true,
         'link_b': 'wald',
         'link_a': '1distraction',
@@ -42,13 +42,13 @@ window.path = {
         'success': 'zwerg'
     },
     "zwerg": {
-        'text': 'Es ist tatsächlich ##Zwerg. Er steht mit dem Rücken zu dir und ist voll auf seine Aufgabe konzentriert - er angelt! "##Zwerg, was machst du da? Fische wird es hier keine geben. Oder versuchst du wieder ein Eichhörnchen zu fangen?" - Du lachst laut los, er reagiert nicht. Möchtest du ihn gewaltsam zu dir <button class="intext-btn link-a-btn">herum drehen</button> oder findest du dies alles sehr merkwürdig und <button class="intext-btn link-b-btn">gehst weiter</button>, ohne ihn zu beachten?',
+        'text': 'Es ist tatsächlich Belegol. Er steht mit dem Rücken zu dir und ist voll auf seine Aufgabe konzentriert - er angelt! "Belegol, was machst du da? Fische wird es hier keine geben. Oder versuchst du wieder ein Eichhörnchen zu fangen?" - Du lachst laut los, er reagiert nicht. Möchtest du ihn gewaltsam zu dir <button class="intext-btn link-a-btn">herum drehen</button> oder findest du dies alles sehr merkwürdig und <button class="intext-btn link-b-btn">gehst weiter</button>, ohne ihn zu beachten?',
         'distraction': true,
         'link_a': 'zwerg_fail',
         'link_b': 'zwerg_confirm'
     },
     "zwerg_confirm": {
-        'text': 'Willst du wirklich ##Zwerg alleine hier im Wald lassen? Er steht dort zwar still und stumm, aber war sicherlich nur in seine Aufgabe vertieft.<br><button class="intext-btn link-a-btn">Drehst du um</button> oder gehst du <button class="intext-btn link-b-btn">alleine weiter</button>? Vor dir wird der Wald immer dichter und strahlt eine unheimliche Atmosphäre aus.',
+        'text': 'Willst du wirklich Belegol alleine hier im Wald lassen? Er steht dort zwar still und stumm, aber war sicherlich nur in seine Aufgabe vertieft.<br><button class="intext-btn link-a-btn">Drehst du um</button> oder gehst du <button class="intext-btn link-b-btn">alleine weiter</button>? Vor dir wird der Wald immer dichter und strahlt eine unheimliche Atmosphäre aus.',
         'distraction': true,
         'link_a': 'zwerg2',
         'link_b': 'tiefer_wald_ohne'
@@ -60,7 +60,7 @@ window.path = {
         'link_b': 'zwerg_confirm'
     },
     "zwerg_fail": {
-        'text': 'Gerade als du ##Zwerg berühren willst, dreht er sich von alleine um. In dem Moment merkst du, dass er gar nicht angelt. Die Angelleine ist ein Auswuchs aus einem Pilz am Wegesrand, der sich scheinbar am Kopf des Zwergen festgesetzt hat. Und auch ##Zwerg scheint nicht er selbst zu sein, seine Augen sind komplett weiß und er greift nach seiner Axt.<br>Du kannst dem ersten Schlag durch eine Ausweichrolle entgehen und zückst nun selbst dein ##Schwert.',
+        'text': 'Gerade als du Belegol berühren willst, dreht er sich von alleine um. In dem Moment merkst du, dass er gar nicht angelt. Die Angelleine ist ein Auswuchs aus einem Pilz am Wegesrand, der sich scheinbar am Kopf des Zwergen festgesetzt hat. Und auch Belegol scheint nicht er selbst zu sein, seine Augen sind komplett weiß und er greift nach seiner Axt.<br>Du kannst dem ersten Schlag durch eine Ausweichrolle entgehen und zückst nun selbst dein Streithammer.',
         'success': 'wald_kampf'
     },
     "wald_kampf": {
@@ -89,7 +89,7 @@ window.path = {
         'fail': 'wald_kampf_fail'
     },
     "tiefer_wald_ohne": {
-        'text': 'Der Wald wird immer dunkler. Aber du willst auch nicht umdrehen, irgendetwas an ##Zwerg hat einfach nicht gestimmt.<br><br>Irgendwann scheint es aber wieder heller zu werden oder bildest du das dir nur ein?<br>Nein, dort scheint eine Lichtung zu sein. Und mitten auf der Lichtung kannst du eine kleine Hütte erkennen. Du kannst keinen Eingang erkennen, aber vor der Hütte steht Alrik und murmelt etwas vor sich hin.',
+        'text': 'Der Wald wird immer dunkler. Aber du willst auch nicht umdrehen, irgendetwas an Belegol hat einfach nicht gestimmt.<br><br>Irgendwann scheint es aber wieder heller zu werden oder bildest du das dir nur ein?<br>Nein, dort scheint eine Lichtung zu sein. Und mitten auf der Lichtung kannst du eine kleine Hütte erkennen. Du kannst keinen Eingang erkennen, aber vor der Hütte steht Alrik und murmelt etwas vor sich hin.',
         'success': 'vor_huette_kampf',
     },
     "vor_huette_kampf": {
@@ -115,17 +115,17 @@ window.path = {
         'success': 'huette',
     },
     "tiefer_wald": {
-        'text': 'Der Wald wird immer dunkler. Aber du willst auch nicht umdrehen, diese Pilze möchtest du nie wieder sehen.<br><br>Irgendwann scheint es aber wieder heller zu werden oder bildest du das dir nur ein?<br>Nein, dort scheint eine Lichtung zu sein. Und mitten auf der Lichtung kannst du eine kleine Hütte erkennen. Die Hütte scheint verschlossen zu sein, denn vor der Hütte findest du ##Marco, der am Türschloss herumwerkelt.',
+        'text': 'Der Wald wird immer dunkler. Aber du willst auch nicht umdrehen, diese Pilze möchtest du nie wieder sehen.<br><br>Irgendwann scheint es aber wieder heller zu werden oder bildest du das dir nur ein?<br>Nein, dort scheint eine Lichtung zu sein. Und mitten auf der Lichtung kannst du eine kleine Hütte erkennen. Die Hütte scheint verschlossen zu sein, denn vor der Hütte findest du Balduin, der am Türschloss herumwerkelt.',
         'success': 'vor_huette_decision',
     },
     "vor_huette_decision": {
-        'text': '"Bashar! Gut dich zu sehen. Ich bin es wirklich, steck deine Waffe weg." Die letzten Pilze haben nicht geredet, ist dies wirklich ##Marco? Als du dein ##Schwert einsteckst, fährt er fort, "Alrik und ##Zwerg haben es nicht geschafft, die Pilze haben sie geholt. Ich weiß nicht, wo Mo ist, aber ich habe gehofft, dass sie hier in der Hütte ist, leider ist diese verschlossen."<br><button class="intext-btn link-a-btn">Hilfst</button> du ##Marco die Tür zu öffnen oder suchst du einen <button class="intext-btn link-b-btn">anderen Weg</button> in die Hütte zu gelangengehen?',
+        'text': '"Bashar! Gut dich zu sehen. Ich bin es wirklich, steck deine Waffe weg." Die letzten Pilze haben nicht geredet, ist dies wirklich Balduin? Als du dein Streithammer einsteckst, fährt er fort, "Alrik und Belegol haben es nicht geschafft, die Pilze haben sie geholt. Ich weiß nicht, wo Mo ist, aber ich habe gehofft, dass sie hier in der Hütte ist, leider ist diese verschlossen."<br><button class="intext-btn link-a-btn">Hilfst</button> du Balduin die Tür zu öffnen oder suchst du einen <button class="intext-btn link-b-btn">anderen Weg</button> in die Hütte zu gelangengehen?',
         'distraction': true,
         'link_a': 'vor_huette_marco',
         'link_b': 'vor_huette_akro'
     },
     "vor_huette_marco": {
-        'text': 'Du schaust ##Marco gespannt zu, wie er versucht die Tür zu öffnen.<br><br>Es vergehen Stunden.<br><br>Irgendwann wird dir langweilig und du gehst du einmal um die Hütte herum. Von der anderen Seite hörst du weiter ##Marco fluchen.',
+        'text': 'Du schaust Balduin gespannt zu, wie er versucht die Tür zu öffnen.<br><br>Es vergehen Stunden.<br><br>Irgendwann wird dir langweilig und du gehst du einmal um die Hütte herum. Von der anderen Seite hörst du weiter Balduin fluchen.',
         'success': 'vor_huette_akro',
     },
     "vor_huette_akro": {
@@ -147,7 +147,7 @@ window.path = {
         'success': 'huette2'
     },
     "huette_marco": {
-        'text': '"Mo!" ist das erste, was du hörst. "Mo!" erwiderst du. "Mo!" - "Mo! Es reicht. Schön dich zu sehen." "Bashar, ich freue mich auch dich zu sehen. Hier spielt alles verrückt. Draußen sind überall diese Pilze und irgendwie können die in deinen Körper gelangen. Selbst meine exzellenten Medizinkenntnisse können da nicht mehr helfen. Ich glaube die einzige Möglichkeit dies zu überleben, ist sich hier zu verstecken und zu hoffen, dass dieser Albtraum bald herum ist."<br>"Oh, ##Marco ist noch draußen. Wir sollten ihn hinein lassen.',
+        'text': '"Mo!" ist das erste, was du hörst. "Mo!" erwiderst du. "Mo!" - "Mo! Es reicht. Schön dich zu sehen." "Bashar, ich freue mich auch dich zu sehen. Hier spielt alles verrückt. Draußen sind überall diese Pilze und irgendwie können die in deinen Körper gelangen. Selbst meine exzellenten Medizinkenntnisse können da nicht mehr helfen. Ich glaube die einzige Möglichkeit dies zu überleben, ist sich hier zu verstecken und zu hoffen, dass dieser Albtraum bald herum ist."<br>"Oh, Balduin ist noch draußen. Wir sollten ihn hinein lassen.',
         'success': 'huette2'
     },
     "huette2": {
