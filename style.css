@@ -12,7 +12,7 @@ body {
     margin-left: 5%;
     margin-top: 40px;
     max-width: 1000px;
-    padding: 50px 0;
+    padding: 50px 0 70px 0;
     min-height: 500px;
 }
 .title {
@@ -74,4 +74,12 @@ body {
 }
 .btn:focus {
     outline: none;
+}
+
+.unicorn{
+    display: none;
+    width: 80px;
+    position: absolute;
+    bottom: 10px;
+    right: 80px;
 }

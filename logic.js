@@ -34,12 +34,11 @@ $(document).ready(function () {
         localStorage.dsa = '{}';
     }
 
+
     if (!getLS('currentPage')) {
         setLS('currentPage','start');
     }
-    if (!!getLS('background')) {
-        $('.container').css('background-image', 'url("' + getLS('background') + '")');
-    }
+
 
     var current = getLS('currentPage');
     if (!path[current]) {
@@ -48,6 +47,11 @@ $(document).ready(function () {
     }
 
     window.obj = path[current];
+
+    if(obj.code) {
+        obj.code();
+    }
+
     if (!obj.success) {
         $('.submit-btn').hide();
         $('.reset-btn').show();
@@ -80,6 +84,10 @@ $(document).ready(function () {
         $('.checks').show();
     }
 
+    if (getLS('unicorn')) {
+        $('.unicorn').show();
+    }
+
     $('.link-a-btn').on('click', function () {
         setLS('currentPage', obj.link_a);
         window.location.reload()
@@ -87,6 +95,21 @@ $(document).ready(function () {
 
     $('.link-b-btn').on('click', function () {
         setLS('currentPage', obj.link_b);
+        window.location.reload()
+    });
+
+    $('.link-c-btn').on('click', function () {
+        setLS('currentPage', obj.link_c);
+        window.location.reload()
+    });
+
+    $('.link-d-btn').on('click', function () {
+        setLS('currentPage', obj.link_d);
+        window.location.reload()
+    });
+
+    $('.link-e-btn').on('click', function () {
+        setLS('currentPage', obj.link_e);
         window.location.reload()
     });
 
